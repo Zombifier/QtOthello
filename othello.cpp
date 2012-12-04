@@ -50,8 +50,10 @@ void Othello::click(short xpos, short ypos)
         msgBox.setWindowTitle("Win");
         if(game->greenCount > game->redCount)
             msgBox.setInformativeText("Green have won the game!");
-        else
+        else if(game->greenCount < game->redCount)
             msgBox.setInformativeText("Red have won the game!");
+        else
+            msgBox.setInformativeText("Draw");
         msgBox.setStandardButtons(QMessageBox::Ok);
         msgBox.setDefaultButton(QMessageBox::Ok);
         msgBox.exec();
