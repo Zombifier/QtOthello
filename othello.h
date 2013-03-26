@@ -4,7 +4,7 @@
 #include <QDesktopServices>
 #include <QLabel>
 #include <QMessageBox>
-#include <QtGui/QMainWindow>
+#include <QMainWindow>
 #include <QUrl>
 #include <vector>
 
