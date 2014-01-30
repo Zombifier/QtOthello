@@ -85,7 +85,7 @@ void Othello::help()
 
 void Othello::about()
 {
-    QMessageBox msgBox;
+    QMessageBox msgBox(this);
     msgBox.setWindowOpacity(0.9);
     msgBox.setWindowTitle("About");
     msgBox.setInformativeText("<b>Othello</b><br>Based on Qt " QT_VERSION_STR "<p>By Yi Kong(yk1211@imperial.ac.uk)<p>Built on " __DATE__ " at " __TIME__);
